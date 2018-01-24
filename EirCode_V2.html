@@ -4,19 +4,21 @@
 <title>String Functions</title>
 
 <script>
-var EirCode
+
+/* This is my First javascript*/
+var EirCode;
 function EnterEirCode()
 
-{
-EirCode= prompt ("Please Enter Your Eircode", "e.g H87 F3DG");
-}
+  {
+     EirCode= prompt ("Please Enter Your Eircode", "e.g H87 F3DG");
+  }
 function CheckEirCode(EirCode)
-{
-if(EirCode.length>=8)
-return true
-else
-return false
-}
+	{
+		if(EirCode.length>=8)
+		return true;
+		else
+		return false;
+	}
 </script>
 <head>
 
@@ -26,7 +28,7 @@ EnterEirCode()
 
 while(!CheckEirCode(EirCode))
 {
-alert("Eir Code Has Too Few Characters.");
+alert("EirCode Has Too Few Characters.");
 EnterEirCode();
 }
 
